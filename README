@@ -1,0 +1,14 @@
+MGI-model.split.tar:
+There are three models in this tar file. We used MGI sequencer data to train these models. These models is:
+WGS-PCR-model: is used for calling WGS PCR data;
+WGS-PCR-free-model: is used for calling WGS PCR-free data;
+WES-model: is used for calling WES data.
+We split the model tar file to 12 small files because of GitHub's maximun file size.
+You can use the following command to decompress:
+	cd ./MGI-model.split.tar
+	cat MGI-model.tar.gz.* | tar -zxv
+
+deepvariant-0.7.0.zip:
+The above three models are based on 0.7.0 version of DeepVariant.
+This source code can be downloaded from the following GitHub link.
+https://github.com/google/deepvariant/releases/tag/v0.7.0
